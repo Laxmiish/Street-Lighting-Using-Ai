@@ -1,0 +1,19 @@
+{
+  "name": "lumina-ai-street-lighting",
+  "version": "2.4.0",
+  "private": true,
+  "description": "LuminaAI Intelligent Municipal Adaptive Street Lighting Management Platform",
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build",
+    "start": "node backend/server.js",
+    "seed:python": "python database/populate_database.py"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "morgan": "^1.10.0",
+    "pg": "^8.13.1"
+  }
+}

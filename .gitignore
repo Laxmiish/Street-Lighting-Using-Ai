@@ -1,0 +1,68 @@
+# Environment variables and private secrets
+.env
+.env.local
+.env.*.local
+*.env
+backend/.env
+backend/.env.local
+frontend/.env.local
+database/.env
+database/.env.local
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production build artifacts
+dist/
+build/
+.vercel/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# System and editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+
+# Coverage directory
+coverage/
+
+# Planning artifacts, memory, and internal agent notes
+brain/
+.brain/
+.agents/
+
+# Local-only population scripts and utilities
+database/populate_database.py
+database/populate_lucknow.js
+distribute_commits.ps1
+
+# Python environment and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Analysis and tool caches
+.fallow/
+frontend/.fallow/
