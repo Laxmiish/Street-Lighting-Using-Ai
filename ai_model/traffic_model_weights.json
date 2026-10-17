@@ -1,0 +1,30 @@
+{
+  "model_type": "Ridge Regression (Traffic-Adaptive Lighting)",
+  "alpha": 1.0,
+  "intercept": 756.0762411101618,
+  "coefficients": {
+    "hour": 60.933071050228826,
+    "sin_hour": -207.20742271324505,
+    "cos_hour": -2079.0681231496883,
+    "day_of_week": 66.58687238978553,
+    "is_weekend": -1200.8922853767376,
+    "temp": 6.987775325557116
+  },
+  "normalization": {
+    "min_traffic": 0.0,
+    "max_traffic": 7280.0
+  },
+  "dimming_policy": {
+    "night_floor_brightness": 20,
+    "proactive_peak_brightness": 65,
+    "motion_boost_brightness": 85,
+    "daylight_lux_cutoff": 50.0,
+    "description": "Proactively elevates baseline illumination from 20% to 65% prior to traffic rushes. Radar/PIR surges to 85-100% on immediate trigger."
+  },
+  "metrics": {
+    "r2_score": 0.7143,
+    "rmse": 1064.4,
+    "mae": 826.52,
+    "samples_trained": 38555
+  }
+}
